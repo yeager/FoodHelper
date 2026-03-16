@@ -103,7 +103,7 @@ class AddMealDialog(Adw.Dialog):
 
     def __init__(self, parent_window):
         super().__init__()
-        self.set_title("Ny maträtt")
+        self.set_title(_("New dish"))
         self.set_content_width(400)
         self.set_content_height(500)
         self.parent_window = parent_window
@@ -211,7 +211,7 @@ class AddMealDialog(Adw.Dialog):
 
     def _on_pick_photo(self, _button):
         dialog = Gtk.FileDialog()
-        dialog.set_title("Välj ett foto")
+        dialog.set_title(_("Select a photo"))
         f = Gtk.FileFilter()
         f.set_name("Bilder")
         f.add_mime_type("image/jpeg")
@@ -299,7 +299,7 @@ class FoodHelperWindow(Adw.ApplicationWindow):
         # Tomvy
         empty = Adw.StatusPage()
         empty.set_icon_name("dish-symbolic")
-        empty.set_title("Ingen mat ännu!")
+        empty.set_title(_("No food yet!"))
         empty.set_description("Tryck + för att lägga till din första maträtt")
         self.stack.add_named(empty, "empty")
 
