@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=FoodHelper
+Name[sv]=Mathjälp
+Comment=Recipe guide with pictograms
+Comment[sv]=Receptguide med piktogram
+GenericName=Accessibility Application
+GenericName[sv]=Tillgänglighetsapp
+Exec=python3 -m foodhelper
+Icon=foodhelper
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+Keywords=accessibility;a11y;
+Keywords[sv]=tillgänglighet;funktionsnedsättning;
