@@ -1,44 +1,30 @@
-"""Internationalization support for the application."""
-
 import gettext
 import locale
 import os
 
+DOMAIN = "foodhelper"
+LOCALEDIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "locale")
 
-def setup_i18n(domain, localedir=None):
-    """Set up internationalization for the application.
-    
-    Args:
-        domain: The translation domain name (usually the app name)
-        localedir: Path to locale directory (optional)
-    """
-    if localedir is None:
-        # Look for locale data relative to this module
-        localedir = os.path.join(os.path.dirname(__file__), '..', 'locale')
-        if not os.path.exists(localedir):
-            localedir = None
-    
-    try:
-        locale.setlocale(locale.LC_ALL, '')
-    except locale.Error:
-        # Fallback if system locale is not available
-        pass
-    
-    # Set up gettext
-    try:
-        if localedir and os.path.exists(localedir):
-            gettext.bindtextdomain(domain, localedir)
-            gettext.textdomain(domain)
-        else:
-            # No locale directory found, use system default
-            gettext.textdomain(domain)
-    except Exception:
-        # If gettext setup fails, continue without translation
-        pass
-    
-    # Return the translation function
-    return gettext.gettext
+# System locale dirs
+SYSTEM_LOCALEDIRS = [
+    LOCALEDIR,
+    "/usr/share/locale",
+    "/usr/local/share/locale",
+]
 
+try:
+    locale.setlocale(locale.LC_ALL, "")
+except locale.Error:
+    pass
 
-# Set up translation function
+# Find locale dir with our translations
+for d in SYSTEM_LOCALEDIRS:
+    if os.path.isdir(d):
+        gettext.bindtextdomain(DOMAIN, d)
+        break
+else:
+    gettext.bindtextdomain(DOMAIN, LOCALEDIR)
+
+gettext.textdomain(DOMAIN)
 _ = gettext.gettext
+
