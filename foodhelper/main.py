@@ -1,6 +1,7 @@
 """FoodHelper - Matdagbok med bilder för selektiva ätare."""
 
 import gi
+from foodhelper.i18n import _
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 
@@ -116,11 +117,11 @@ class AddMealDialog(Adw.Dialog):
         header.set_show_start_title_buttons(False)
         header.set_show_end_title_buttons(False)
 
-        cancel_btn = Gtk.Button(label="Avbryt")
+        cancel_btn = Gtk.Button(label=_("Avbryt")
         cancel_btn.connect("clicked", lambda _: self.close())
         header.pack_start(cancel_btn)
 
-        save_btn = Gtk.Button(label="Spara")
+        save_btn = Gtk.Button(label=_("Spara")
         save_btn.add_css_class("suggested-action")
         save_btn.connect("clicked", self._on_save)
         header.pack_end(save_btn)
@@ -140,8 +141,8 @@ class AddMealDialog(Adw.Dialog):
         toolbar_view.set_content(clamp)
 
         # Foto
-        photo_group = Adw.PreferencesGroup(title="Foto")
-        self.photo_button = Gtk.Button(label="Välj foto...")
+        photo_group = Adw.PreferencesGroup(title=_("Foto")
+        self.photo_button = Gtk.Button(label=_("Välj foto...")
         self.photo_button.set_icon_name("camera-photo-symbolic")
         self.photo_button.connect("clicked", self._on_pick_photo)
         photo_group.add(self.photo_button)
@@ -154,18 +155,18 @@ class AddMealDialog(Adw.Dialog):
         content.append(photo_group)
 
         # Namn
-        name_group = Adw.PreferencesGroup(title="Maträtt")
-        self.name_row = Adw.EntryRow(title="Namn på maträtten")
+        name_group = Adw.PreferencesGroup(title=_("Maträtt")
+        self.name_row = Adw.EntryRow(title=_("Namn på maträtten")
         name_group.add(self.name_row)
         content.append(name_group)
 
         # Betyg
-        rating_group = Adw.PreferencesGroup(title="Betyg")
+        rating_group = Adw.PreferencesGroup(title=_("Betyg")
         rating_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
         rating_box.set_margin_top(8)
         rating_box.set_margin_bottom(8)
 
-        self.rating_label = Gtk.Label(label="😐 Okej")
+        self.rating_label = Gtk.Label(label=_("😐 Okej")
         self.rating_label.add_css_class("title-2")
         rating_box.append(self.rating_label)
 
@@ -184,7 +185,7 @@ class AddMealDialog(Adw.Dialog):
         content.append(rating_group)
 
         # Anteckningar
-        notes_group = Adw.PreferencesGroup(title="Anteckningar")
+        notes_group = Adw.PreferencesGroup(title=_("Anteckningar")
         notes_frame = Gtk.Frame()
         self.notes_view = Gtk.TextView()
         self.notes_view.set_wrap_mode(Gtk.WrapMode.WORD)
@@ -284,7 +285,7 @@ class FoodHelperWindow(Adw.ApplicationWindow):
         # Headerbar
         header = Adw.HeaderBar()
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text("Lägg till maträtt")
+        add_btn.set_tooltip_text(_("Lägg till maträtt")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add)
         header.pack_end(add_btn)
