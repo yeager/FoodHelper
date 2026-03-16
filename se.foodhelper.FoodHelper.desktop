@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=FoodHelper
+Name[sv]=FoodHelper - Matdagbok
+Comment=Food diary with photos for selective eaters
+Comment[sv]=Matdagbok med bilder för selektiva ätare
+Exec=foodhelper
+Icon=accessories-text-editor
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=food;diary;mat;dagbok;
