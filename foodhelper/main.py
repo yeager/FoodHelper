@@ -155,8 +155,8 @@ class AddMealDialog(Adw.Dialog):
         content.append(photo_group)
 
         # Namn
-        name_group = Adw.PreferencesGroup(title=_("Maträtt")
-        self.name_row = Adw.EntryRow(title=_("Name på maträtten")
+        name_group = Adw.PreferencesGroup(title=_("Dish")
+        self.name_row = Adw.EntryRow(title=_("Name of the dish")
         name_group.add(self.name_row)
         content.append(name_group)
 
@@ -285,7 +285,7 @@ class FoodHelperWindow(Adw.ApplicationWindow):
         # Headerbar
         header = Adw.HeaderBar()
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text(_("Add maträtt")
+        add_btn.set_tooltip_text(_("Add dish")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add)
         header.pack_end(add_btn)

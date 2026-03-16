@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the FoodHelper package.
+# This file is distributed under the same license as the foodhelper package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FoodHelper 1.0\n"
+"Project-Id-Version: foodhelper 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 11:51+0100\n"
+"POT-Creation-Date: 2026-03-16 12:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,11 +34,11 @@ msgid "Select foto..."
 msgstr ""
 
 #: foodhelper/main.py:158
-msgid "Maträtt"
+msgid "Dish"
 msgstr ""
 
 #: foodhelper/main.py:159
-msgid "Name på maträtten"
+msgid "Name of the dish"
 msgstr ""
 
 #: foodhelper/main.py:164
@@ -54,5 +54,5 @@ msgid "Anteckningar"
 msgstr ""
 
 #: foodhelper/main.py:288
-msgid "Add maträtt"
+msgid "Add dish"
 msgstr ""
