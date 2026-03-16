@@ -141,8 +141,8 @@ class AddMealDialog(Adw.Dialog):
         toolbar_view.set_content(clamp)
 
         # Foto
-        photo_group = Adw.PreferencesGroup(title=_("Foto")
-        self.photo_button = Gtk.Button(label=_("Select foto...")
+        photo_group = Adw.PreferencesGroup(title=_("Photo")
+        self.photo_button = Gtk.Button(label=_("Select photo...")
         self.photo_button.set_icon_name("camera-photo-symbolic")
         self.photo_button.connect("clicked", self._on_pick_photo)
         photo_group.add(self.photo_button)
@@ -161,12 +161,12 @@ class AddMealDialog(Adw.Dialog):
         content.append(name_group)
 
         # Betyg
-        rating_group = Adw.PreferencesGroup(title=_("Betyg")
+        rating_group = Adw.PreferencesGroup(title=_("Rating")
         rating_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
         rating_box.set_margin_top(8)
         rating_box.set_margin_bottom(8)
 
-        self.rating_label = Gtk.Label(label=_("😐 Okej")
+        self.rating_label = Gtk.Label(label=_("😐 OK")
         self.rating_label.add_css_class("title-2")
         rating_box.append(self.rating_label)
 
@@ -185,7 +185,7 @@ class AddMealDialog(Adw.Dialog):
         content.append(rating_group)
 
         # Anteckningar
-        notes_group = Adw.PreferencesGroup(title=_("Anteckningar")
+        notes_group = Adw.PreferencesGroup(title=_("Notes")
         notes_frame = Gtk.Frame()
         self.notes_view = Gtk.TextView()
         self.notes_view.set_wrap_mode(Gtk.WrapMode.WORD)

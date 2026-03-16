@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foodhelper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 19:02+0100\n"
+"POT-Creation-Date: 2026-03-16 19:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,11 @@ msgid "Save"
 msgstr ""
 
 #: foodhelper/main.py:144
-msgid "Foto"
+msgid "Photo"
 msgstr ""
 
 #: foodhelper/main.py:145
-msgid "Select foto..."
+msgid "Select photo..."
 msgstr ""
 
 #: foodhelper/main.py:158
@@ -46,15 +46,15 @@ msgid "Name of the dish"
 msgstr ""
 
 #: foodhelper/main.py:164
-msgid "Betyg"
+msgid "Rating"
 msgstr ""
 
 #: foodhelper/main.py:169
-msgid "😐 Okej"
+msgid "😐 OK"
 msgstr ""
 
 #: foodhelper/main.py:188
-msgid "Anteckningar"
+msgid "Notes"
 msgstr ""
 
 #: foodhelper/main.py:214
