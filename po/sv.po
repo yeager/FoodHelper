@@ -1,0 +1,42 @@
+# Swedish translation
+# Copyright (C) 2024
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Anteckningar"
+msgstr "Anteckningar"
+
+msgid "Avbryt"
+msgstr "Cancel"
+
+msgid "Betyg"
+msgstr "Betyg"
+
+msgid "Foto"
+msgstr "Foto"
+
+msgid "Lägg till maträtt"
+msgstr "Add maträtt"
+
+msgid "Maträtt"
+msgstr "Maträtt"
+
+msgid "Namn på maträtten"
+msgstr "Name på maträtten"
+
+msgid "Spara"
+msgstr "Save"
+
+msgid "Välj foto..."
+msgstr "Select foto..."
+
+msgid "😐 Okej"
+msgstr "😐 Okej"
+

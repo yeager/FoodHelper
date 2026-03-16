@@ -117,11 +117,11 @@ class AddMealDialog(Adw.Dialog):
         header.set_show_start_title_buttons(False)
         header.set_show_end_title_buttons(False)
 
-        cancel_btn = Gtk.Button(label=_("Avbryt")
+        cancel_btn = Gtk.Button(label=_("Cancel")
         cancel_btn.connect("clicked", lambda _: self.close())
         header.pack_start(cancel_btn)
 
-        save_btn = Gtk.Button(label=_("Spara")
+        save_btn = Gtk.Button(label=_("Save")
         save_btn.add_css_class("suggested-action")
         save_btn.connect("clicked", self._on_save)
         header.pack_end(save_btn)
@@ -142,7 +142,7 @@ class AddMealDialog(Adw.Dialog):
 
         # Foto
         photo_group = Adw.PreferencesGroup(title=_("Foto")
-        self.photo_button = Gtk.Button(label=_("Välj foto...")
+        self.photo_button = Gtk.Button(label=_("Select foto...")
         self.photo_button.set_icon_name("camera-photo-symbolic")
         self.photo_button.connect("clicked", self._on_pick_photo)
         photo_group.add(self.photo_button)
@@ -156,7 +156,7 @@ class AddMealDialog(Adw.Dialog):
 
         # Namn
         name_group = Adw.PreferencesGroup(title=_("Maträtt")
-        self.name_row = Adw.EntryRow(title=_("Namn på maträtten")
+        self.name_row = Adw.EntryRow(title=_("Name på maträtten")
         name_group.add(self.name_row)
         content.append(name_group)
 
@@ -285,7 +285,7 @@ class FoodHelperWindow(Adw.ApplicationWindow):
         # Headerbar
         header = Adw.HeaderBar()
         add_btn = Gtk.Button(icon_name="list-add-symbolic")
-        add_btn.set_tooltip_text(_("Lägg till maträtt")
+        add_btn.set_tooltip_text(_("Add maträtt")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add)
         header.pack_end(add_btn)

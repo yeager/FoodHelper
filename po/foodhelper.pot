@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the FoodHelper package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: FoodHelper 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 11:31+0100\n"
+"POT-Creation-Date: 2026-03-16 11:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Anteckningar
-#: /tmp/FoodHelper/foodhelper/main.py:188
-msgid "Anteckningar"
+#: foodhelper/main.py:120
+msgid "Cancel"
 msgstr ""
 
-#: /tmp/FoodHelper/foodhelper/main.py:120
-msgid "Avbryt"
+#: foodhelper/main.py:124
+msgid "Save"
 msgstr ""
 
-#. Betyg
-#: /tmp/FoodHelper/foodhelper/main.py:164
-msgid "Betyg"
-msgstr ""
-
-#. Foto
-#: /tmp/FoodHelper/foodhelper/main.py:144
+#: foodhelper/main.py:144
 msgid "Foto"
 msgstr ""
 
-#: /tmp/FoodHelper/foodhelper/main.py:288
-msgid "Lägg till maträtt"
+#: foodhelper/main.py:145
+msgid "Select foto..."
 msgstr ""
 
-#. Namn
-#: /tmp/FoodHelper/foodhelper/main.py:158
+#: foodhelper/main.py:158
 msgid "Maträtt"
 msgstr ""
 
-#: /tmp/FoodHelper/foodhelper/main.py:159
-msgid "Namn på maträtten"
+#: foodhelper/main.py:159
+msgid "Name på maträtten"
 msgstr ""
 
-#: /tmp/FoodHelper/foodhelper/main.py:124
-msgid "Spara"
+#: foodhelper/main.py:164
+msgid "Betyg"
 msgstr ""
 
-#: /tmp/FoodHelper/foodhelper/main.py:145
-msgid "Välj foto..."
-msgstr ""
-
-#: /tmp/FoodHelper/foodhelper/main.py:169
+#: foodhelper/main.py:169
 msgid "😐 Okej"
+msgstr ""
+
+#: foodhelper/main.py:188
+msgid "Anteckningar"
+msgstr ""
+
+#: foodhelper/main.py:288
+msgid "Add maträtt"
 msgstr ""
