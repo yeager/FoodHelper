@@ -1,51 +1,47 @@
+# Translation file for FoodHelper
 msgid ""
 msgstr ""
-"Project-Id-Version: foodhelper 0.1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-16 12:00+0100\n"
-"Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
-"Language-Team: Swedish\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "New dish"
+msgstr "Ny maträtt"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Photo"
+msgstr "Foto"
+
+msgid "Select photo..."
+msgstr "Välj foto..."
 
 msgid "Dish"
 msgstr "Maträtt"
 
 msgid "Name of the dish"
-msgstr "Name på maträtten"
+msgstr "Namn på maträtten"
 
-msgid "Add dish"
-msgstr "Add maträtt"
-
-msgid "Anteckningar"
-msgstr "Anteckningar"
-
-msgid "Avbryt"
-msgstr "Cancel"
-
-msgid "Betyg"
+msgid "Rating"
 msgstr "Betyg"
 
-msgid "Foto"
-msgstr "Foto"
+msgid "😐 OK"
+msgstr "😐 OK"
 
-msgid "Lägg till maträtt"
-msgstr "Add maträtt"
+msgid "Notes"
+msgstr "Anteckningar"
 
-msgid "Maträtt"
-msgstr "Maträtt"
+msgid "Select a photo"
+msgstr "Välj ett foto"
 
-msgid "Namn på maträtten"
-msgstr "Name på maträtten"
+msgid "Add dish"
+msgstr "Lägg till maträtt"
 
-msgid "Spara"
-msgstr "Save"
-
-msgid "Välj foto..."
-msgstr "Select foto..."
-
-msgid "😐 Okej"
-msgstr "😐 Okej"
+msgid "No food yet!"
+msgstr "Ingen mat ännu!"
 
